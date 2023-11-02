@@ -7,13 +7,11 @@ Enthusiastic Android app developer here! I love turning creative ideas into smoo
 - 🔭 I’m currently working on my own projects. 
 - 🌱 I’m currently learning flutter,kotlin & java. 
 - 💬 Ask me about Android app development. 
-- 📫 How to reach me: you can message me in linkedIn or Email.
+- 📫 How to reach me: you can message me in [https://www.linkedin.com/in/abu-obaida-693412280/]
 
 Skills: JAVA / FIREBASE / PHP / XML / KOTLIN
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=obaida9521&show_icons=true)  
-
- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=obaida9521)](https://github.com/anuraghazra/github-readme-stats)
 
 <div align="center" >
   <a href="https://github.com/obaida9521"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'></a>
