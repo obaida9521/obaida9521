@@ -1,4 +1,4 @@
-![I am android app developer](https://developerobaida.com/my_github/my%20cover1.png)
+![I am android app developer](https://developerobaida.com/my_github/my_cover1.png)
 ## Hi there 👋, my name is Abu Obaida
 ### I am android app developer
 
