@@ -1,0 +1,31 @@
+<svg width="100%" viewBox="0 0 1280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c5364">
+        <animate attributeName="stop-color" values="#2c5364;#24485e;#2c5364" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#0f2027">
+        <animate attributeName="stop-color" values="#0f2027;#16222a;#0f2027" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Animated top waves -->
+  <path fill="url(#bgf)" d="M0 40 Q160 20 320 40 T640 40 T960 40 T1280 40 V120 H0 Z">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
+      M0 40 Q160 20 320 40 T640 40 T960 40 T1280 40 V120 H0 Z;
+      M0 40 Q160 60 320 40 T640 40 T960 40 T1280 40 V120 H0 Z;
+      M0 40 Q160 20 320 40 T640 40 T960 40 T1280 40 V120 H0 Z"/>
+  </path>
+  <path fill="#36BCF7" opacity="0.15" d="M0 50 Q213 35 426 50 T853 50 T1280 50 V120 H0 Z">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+      M0 50 Q213 35 426 50 T853 50 T1280 50 V120 H0 Z;
+      M0 50 Q213 65 426 50 T853 50 T1280 50 V120 H0 Z;
+      M0 50 Q213 35 426 50 T853 50 T1280 50 V120 H0 Z"/>
+  </path>
+
+  <text x="640" y="95" text-anchor="middle" font-family="monospace" font-size="14" fill="#7FDBFF" opacity="0.7">
+    &lt;/&gt; with &#10084; by Abu Obaida
+  </text>
+</svg>
