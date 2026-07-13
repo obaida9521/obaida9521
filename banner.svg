@@ -1,0 +1,122 @@
+<svg width="100%" viewBox="0 0 1280 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Animated background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027">
+        <animate attributeName="stop-color" values="#0f2027;#16222a;#0a1a2f;#0f2027" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#203a43">
+        <animate attributeName="stop-color" values="#203a43;#1b3a4b;#203a43" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#2c5364">
+        <animate attributeName="stop-color" values="#2c5364;#24485e;#2c5364" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Gradient for name text -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36BCF7"/>
+      <stop offset="50%" stop-color="#7FDBFF"/>
+      <stop offset="100%" stop-color="#36BCF7"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.5 0;0.5 0;-0.5 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="240" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#36BCF7" stroke-width="0.5" opacity="0.07">
+    <path d="M0 60 H1280"/><path d="M0 120 H1280"/><path d="M0 180 H1280"/>
+    <path d="M160 0 V240"/><path d="M320 0 V240"/><path d="M480 0 V240"/><path d="M640 0 V240"/>
+    <path d="M800 0 V240"/><path d="M960 0 V240"/><path d="M1120 0 V240"/>
+  </g>
+
+  <!-- Floating code symbols (left side) -->
+  <g font-family="monospace" fill="#36BCF7" opacity="0.35">
+    <text x="90" y="200" font-size="26">&#123; &#125;
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -140" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0.4;0" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="200" y="230" font-size="20">&lt;/&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -170" dur="11s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0.4;0" dur="11s" begin="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="60" y="120" font-size="18">( )
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -90" dur="7s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0.35;0" dur="7s" begin="1s" repeatCount="indefinite"/>
+    </text>
+    <text x="280" y="150" font-size="16">=&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -100" dur="8s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0.35;0" dur="8s" begin="3s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Floating code symbols (right side) -->
+  <g font-family="monospace" fill="#7FDBFF" opacity="0.35">
+    <text x="1050" y="210" font-size="24">[ ]
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -150" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0.4;0" dur="10s" repeatCount="indefinite"/>
+    </text>
+    <text x="1160" y="180" font-size="20">&lt;/&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -120" dur="8.5s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0.4;0" dur="8.5s" begin="1.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="980" y="140" font-size="16">;
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -90" dur="6.5s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0.35;0" dur="6.5s" begin="2.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="1220" y="120" font-size="18">#
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -80" dur="7.5s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0.35;0" dur="7.5s" begin="0.8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Name -->
+  <text x="640" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="800" fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="2">
+    Abu Obaida
+    <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="640" y="150" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#c9e6f2" letter-spacing="4" opacity="0.9">
+    FULL STACK DEVELOPER
+    <animate attributeName="opacity" values="0;0.9" dur="1.2s" begin="0.5s" fill="freeze"/>
+  </text>
+
+  <!-- Terminal-style line with blinking cursor -->
+  <g font-family="monospace" font-size="16">
+    <text x="640" y="185" text-anchor="middle" fill="#8be9a8" opacity="0.85">
+      <tspan fill="#36BCF7">$</tspan> mobile &#183; backend &#183; devops &#183; databases
+      <animate attributeName="opacity" values="0;0.85" dur="1s" begin="1s" fill="freeze"/>
+    </text>
+    <rect x="905" y="172" width="9" height="16" fill="#8be9a8">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Animated bottom wave -->
+  <g opacity="0.5">
+    <path fill="#36BCF7" opacity="0.25" d="M0 210 Q160 190 320 210 T640 210 T960 210 T1280 210 V240 H0 Z">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
+        M0 210 Q160 190 320 210 T640 210 T960 210 T1280 210 V240 H0 Z;
+        M0 210 Q160 230 320 210 T640 210 T960 210 T1280 210 V240 H0 Z;
+        M0 210 Q160 190 320 210 T640 210 T960 210 T1280 210 V240 H0 Z"/>
+    </path>
+    <path fill="#7FDBFF" opacity="0.2" d="M0 220 Q213 205 426 220 T853 220 T1280 220 V240 H0 Z">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+        M0 220 Q213 205 426 220 T853 220 T1280 220 V240 H0 Z;
+        M0 220 Q213 235 426 220 T853 220 T1280 220 V240 H0 Z;
+        M0 220 Q213 205 426 220 T853 220 T1280 220 V240 H0 Z"/>
+    </path>
+  </g>
+</svg>
